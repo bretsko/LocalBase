@@ -1,0 +1,68 @@
+
+
+
+//SUPPORTED_PLATFORMS = iphonesimulator iphoneos 
+
+//VALID_ARCHS = arm64 armv7 armv7s
+//VALID_ARCHS[sdk=mac*] = x86_64 i386
+//ARCHS = $(VALID_ARCHS)
+
+//MACOSX_DEPLOYMENT_TARGET = 10.12
+//IPHONEOS_DEPLOYMENT_TARGET = 11.0
+//SWIFT_VERSION = 5.0
+
+
+SWIFT_SUPPRESS_WARNINGS = YES
+//SWIFT_VERSION=5.1
+
+// Don't build ppc variants
+//VALID_ARCHS = x86_64
+//ARCHS = $(VALID_ARCHS)
+
+
+// The base SDK to use (if no version is specified, the latest version is assumed)
+//SDKROOT = macosx
+
+//OTHER_LDFLAGS = $(inherited) -L/usr/local/opt/openssl/lib
+//
+//OTHER_CFLAGS = $(inherited)  -I/usr/local/opt/openssl/include
+//
+//HEADER_SEARCH_PATHS = $(inherited) $(SRCROOT)/.build/checkouts/
+//
+//OTHER_SWIFT_FLAGS = $(inherited) -I/usr/local/Cellar/postgresql/10.1/include -Xcc -fmodule-map-file=$(SRCROOT)/Learner.xcodeproj/GeneratedModuleMap/CSQLite/module.modulemap
+
+
+
+//BUILD_VARIANTS = normal debug profile
+
+// Where to find embedded frameworks
+//LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks @loader_path/../Frameworks
+
+//OTHER_SWIFT_FLAGS = -Xswiftc -I/usr/local/opt/openssl/include -Xlinker -L/usr/local/opt/openssl/lib
+
+
+// The final product executables and other build products go here
+//SYMROOT = $(SRCROOT)/../Frameworks
+
+//FRAMEWORK_SEARCH_PATHS = $(inherited) $(SRCROOT)/../Frameworks
+
+//SRCROOT
+
+//OTHER_SWIFT_FLAGS = $(inherited) "-D" "MY CUSTOM FLAG"
+
+//SWIFT_TREAT_WARNINGS_AS_ERRORS = NO
+
+//SWIFT_OPTIMIZATION_LEVEL = -Onone
+
+//VERSIONING_SYSTEM = apple-generic
+//SWIFT_VERSION = 4.0
+//WARNING_CFLAGS = -Woverriding-method-mismatch -Wunreachable-code -Wextra -Wno-unused-parameter -Wformat=2
+
+//GCC_OPTIMIZATION_LEVEL = 0
+//GCC_PREPROCESSOR_DEFINITIONS_CONFIGURATION = DEBUG=1
+//GCC_SYMBOLS_PRIVATE_EXTERN = $(GCC_SYMBOLS_PRIVATE_EXTERN_DEBUG)
+//ONLY_ACTIVE_ARCH = YES
+//OTHER_SWIFT_FLAGS_CONFIGURATION = -D DEBUG
+//RUN_CLANG_STATIC_ANALYZER = YES
+
+

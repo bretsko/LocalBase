@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Log",
+        "repositoryURL": "/Users/bretsko/Projects/Log Github",
+        "state": {
+          "branch": null,
+          "revision": "c04cdfd8a5dc59bdba6adcfb0245ef56184bda06",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
