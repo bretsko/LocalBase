@@ -3,10 +3,10 @@
     "pins": [
       {
         "package": "Log",
-        "repositoryURL": "/Users/bretsko/Projects/Log Github",
+        "repositoryURL": "https://github.com/bretsko/Log",
         "state": {
           "branch": null,
-          "revision": "c04cdfd8a5dc59bdba6adcfb0245ef56184bda06",
+          "revision": "fb9ee78717e3ce41cf9ec9a16cab24a144dd6056",
           "version": "1.0.0"
         }
       }
