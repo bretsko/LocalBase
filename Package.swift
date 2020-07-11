@@ -1,31 +1,41 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.3
 
 import PackageDescription
 
 let package = Package(
-    name: "Base",
+    name: "LocalBase",
     
     platforms: [
-        .macOS(.v10_13), .iOS(.v13), .tvOS(.v10), .watchOS(.v4)
+        .macOS(.v10_15), .iOS(.v14)//, .tvOS(.v10), .watchOS(.v4)
     ],
     products: [
-        // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
-            name: "Base",
-            targets: ["Base"]),
+            name: "LocalBase",
+            targets: ["LocalBase"]),
     ],
     dependencies: [
-        //.package(url: "https://github.com/bretsko/MinimalBase", .from: "1.0.0"),
-        .package(url: "https://github.com/bretsko/Log", from: "1.0.0"),
+        //.package(url: "../Base", from: "1.0.0"),
+        .package(url: "https://github.com/bretsko/Base", .exact("1.0.0")),
+        
+        
+        // .package(url: "../../Quick/Quick", .exact("1.0.0")),
+        // .package(url: "../../Quick/Nimble", .exact("1.0.0")),
+        .package(url: "https://github.com/bretsko/Quick", from: "2.2.1"),
+        .package(url: "https://github.com/bretsko/Nimble", from: "8.0.5"),
+        
+        // QuickObjCRuntime build fails on ios and mac
+//        .package(url: "https://github.com/Quick/Quick", from: "2.2.1"),
+//        .package(url: "https://github.com/Quick/Nimble", from: "8.0.0"),
     ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages which this package depends on.
+        
         .target(
-            name: "Base",
-            dependencies: ["Log"]), 
-        .testTarget(
-            name: "BaseTests",
+            name: "LocalBase",
             dependencies: ["Base"]),
+        
+        .testTarget(
+            name: "LocalBaseTests",
+            dependencies: [ "LocalBase", 
+                            "Quick", "Nimble" ]),
     ]
 )

@@ -1,4 +1,6 @@
-# Base
+# LocalBase
+
+Locale, language, country and number models, supporting translation to different languages 
 
 
 [![Swift5 compatible][Swift5Badge]][Swift5Link]
